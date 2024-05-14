@@ -1,7 +1,7 @@
 # playwright-typescript-practice
 
 # 00. Installation
-## 0.1. Install nodejs
+## 0.1. Install NodeJs
 https://nodejs.org/en/download
 
 ## 0.2. Install Vscode
@@ -25,10 +25,7 @@ npm init playwright@latest
 npx playwright install
 ```
 
-# 03. Creating Tests
-naming convention: mytest.spec.ts
-
-# 04. Runing the Tests
+# 03. Running the Tests
 ## Running all the tests in headless mode with all configured  browsers
     npx playwright test
 
@@ -41,13 +38,13 @@ naming convention: mytest.spec.ts
 ## Running all the tests only in mytest.spec.ts with specified browser in headed mode
     npx playwright test mytest.spec.ts --project=chromium --headed
 
-## Running all the tests only in mytest.spec.ts with specified browser in headed mode and debug mode
-    npx playwright test mytest.spec.ts --project=chromium --headed --debug
-
-# 05. Viewing Playwright Report
-    npx playwright show-report
-
-# 06. Include/ Exclude tests
+# 04. Viewing Playwright Report
+1. Opening index.html under folder 'playwright-report'
+2. Opening through CLI
+```bash
+npx playwright show-report
+```
+# 05. Include/ Exclude tests
 1. To run only few tests 
 ```javascript
 test.only('test', async ({ page }) => {
@@ -55,7 +52,7 @@ test.only('test', async ({ page }) => {
 });
 ```
 
-2. To skip some tests - test.skip
+2. To skip some tests 
 ```javascript
 test.skip('test', async ({ page }) => {
   ...
@@ -73,4 +70,26 @@ npx playwright test filename.spec.ts:11
 ```
 #### Note:- '11' is the line number
 
-5. Execute through 'Playwright Test for VSCode'
+5. Execute through 'Playwright Test for VSCode' plugin
+
+# 06. Debugging the Tests
+
+1. Running all the tests only in mytest.spec.ts with specified browser in headed mode and debug mode
+```bash
+npx playwright test mytest.spec.ts --project=chromium --headed --debug
+```
+
+2. Pausing at specific line by adding below line
+```javascript
+await page.pause();
+```
+
+3. Pausing at specific line by adding breakpoints using 'Playwright Test for VSCode' Plugin
+
+# 07. Locator Strategies
+
+
+
+
+# 0. Creating Own Tests
+naming convention: mytest.spec.ts
