@@ -87,7 +87,7 @@ await page.pause();
 3. Pausing at specific line by adding breakpoints using 'Playwright Test for VSCode' Plugin
 
 # 07. Locator Strategies
-
+https://playwright.dev/docs/locators
 
 
 
