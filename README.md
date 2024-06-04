@@ -91,5 +91,15 @@ https://playwright.dev/docs/locators
 
 
 
-# 0. Creating Own Tests
+# 08. Creating Own Tests
 naming convention: mytest.spec.ts
+
+
+
+# PRACTICE WEBSITES LINK
+1. E-Commerce Application - https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+2. LambdaTest Playground - https://www.lambdatest.com/selenium-playground/
+3. Automation Testing Practice - https://testautomationpractice.blogspot.com
+4. Heroku Application - https://the-internet.herokuapp.com/
+
+
